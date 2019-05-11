@@ -5,4 +5,4 @@ University thesis project: Misux Player is a fast music player for Android that 
 
 Programming skills and technologies used: Java, Android SDK, XML, Android Studio and Material Design.
 
-![](https://github.com/Misux/MisuxPlayer/blob/master/Img/navOptions.jpg)
+![](https://github.com/Misux/MisuxPlayer/blob/master/Img/navOptions.jpg) ![](https://github.com/Misux/MisuxPlayer/blob/master/Img/sliding.jpg)
