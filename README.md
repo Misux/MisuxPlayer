@@ -1,4 +1,4 @@
-# MisuxPlayer
+![](https://github.com/Misux/MisuxPlayer/blob/master/icon.png)#MisuxPlayer
 
 University thesis project: Misux Player is a fast music player for Android that offers powerful features like integrated recording with karaoke capability, equalization presets, reverbs, real time pitch alterations and time stretching and loop functionality.
 
