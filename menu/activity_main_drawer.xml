@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_menu_library"
+            android:title="@string/library"
+            android:checked="true"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_equalizer"
+            android:icon="@drawable/ic_equalizer_black"
+            android:title="@string/equalizer" />
+        <item
+            android:id="@+id/nav_recorder"
+            android:icon="@drawable/ic_recording_black"
+            android:title="@string/recorder" />
+        <item
+            android:id="@+id/nav_alteration"
+            android:icon="@drawable/ic_tune"
+            android:title="@string/alteration" />
+    </group>
+
+    <group>
+        <!--<item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Impostazioni" />-->
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="@string/info" />
+    </group>
+
+</menu>

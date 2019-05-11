@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context_songAdpter="com.example.francesco.masterplayer.fragment.SongFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/NestscrollView"
+        style="@style/NestedScrollBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="end"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/colorAccent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnRand"
+                android:layout_width="fill_parent"
+                android:background="@color/transparent"
+                android:layout_height="52dp"
+                android:paddingBottom="4dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="60dp"
+                android:paddingTop="15dp"
+                android:drawableStart="@drawable/ic_shuffle"
+                android:text="@string/random"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:visibility="visible"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_below="@+id/btnRand"
+                android:layout_width="match_parent"
+                android:background="@drawable/textlines"
+                android:layout_height="16dp"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="6dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="0dp" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_song"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">MisuxPlayer</string>
+    <string name="desc">Immagine</string>
+    <string name="imp">Impostazioni</string>
+    <string name="icon">Icone </string>
+    <string name="iconBox"> Tutte le icone sono state prese dal sito materialdesignicons.com </string>
+
+    <!-- Main -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_hide_first">Pannello Nascosto</string>
+    <string name="action_hide">Nascondi Pannello</string>
+    <string name="action_show">Mostra Pannello</string>
+    <string name="ok">OK</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- Info -->
+    <string name="info">Informazioni</string>
+    <string name="versione">Versione</string>
+    <string name="beta">BETA</string>
+    <string name="update">Aggiornamenti</string>
+    <string name="num_update">0.1.1</string>
+    <string name="name">Francesco Misuraca</string>
+    <string name="info_studente">Studente presso Università degli Studi di Milano, Corso Informatica Musicale</string>
+
+    <!-- Alterations -->
+    <string name="alteration">Alterazioni</string>
+    <string name="vol">Volume: </string>
+    <string name="pitch">Pitch: </string>
+    <string name="time">Tempo: </string>
+    <string name="loop">Loop: </string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+
+    <!-- Equalizer -->
+    <string name="equalizer">Equalizzatore</string>
+    <string name="numBrani"> - Numero Brani</string>
+    <string name="db">0 dB</string>
+    <string name="riverbero">Riverbero</string>
+
+    <!-- Recorder -->
+    <string name="recorder">Registratore</string>
+    <string name="rec">REC</string>
+    <string name="one">1</string>
+
+    <!-- Seach -->
+    <string name="app_label"> Search Feature</string>
+    <string name="search_enter">Enter search</string>
+    <string name="search_hint">Cerca nella libreria</string>
+    <string name="search"> </string>
+
+    <!-- Fragments -->
+    <string name="title_song">Titolo brano</string>
+    <string name="name_album">Nome album</string>
+    <string name="name_artist">Nome artista</string>
+    <string name="name_pl">Nome playlist</string>
+    <string name="new_name_pl">Nuovo nome playlist</string>
+    <string name="no_song">Nessun brano trovato!</string>
+    <string name="no_album">Nessun album</string>
+    <string name="no_artist">Nessun artista</string>
+    <string name="no_pl">Nessuna playlist</string>
+    <string name="random">RIPRODUZIONE CASUALE</string>
+    <string name="duration">00:00</string>
+    <string name="year">Anno</string>
+
+    <!-- Alert -->
+    <string name="path">Percorso file: </string>
+    <string name="dimFile">Dimensione file: </string>
+    <string name="durFile">Durata brano: </string>
+    <string name="yearFile">Anno brano: </string>
+
+    <!-- menu -->
+    <string name="library">Libreria</string>
+    <string name="random2">Riproduzione casuale</string>
+    <string name="sort">Ordina brani per</string>
+    <string name="album">Album</string>
+    <string name="artista">Artista</string>
+    <string name="titolo">Titolo</string>
+    <string name="durata">Durata</string>
+    <string name="track">Traccia album</string>
+
+    <string name="new_playlist">Nuova playlist</string>
+    <string name="add_playlist">Aggiungi alla playlist</string>
+    <string name="rename">Rinomina playlist</string>
+    <string name="delete">Elimina playlist</string>
+
+    <string name="share">Condividi</string>
+    <string name="detail">Dettagli</string>
+    <string name="setRington">Imposta come suoneria</string>
+    <string name="deleteDevice">Elimina dal dispositivo</string>
+    <string name="dur">Durata</string>
+
+</resources>

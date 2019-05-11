@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addPlaylist"
+        android:title="@string/add_playlist"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/dettagli"
+        android:title="@string/detail"
+        app:showAsAction="ifRoom|withText"/>
+
+
+    <item
+        android:id="@+id/setRington"
+        android:title="@string/setRington"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/deleteSong"
+        android:title="@string/deleteDevice"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

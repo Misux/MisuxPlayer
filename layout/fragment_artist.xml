@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container_artist"
+    tools:context_songAdpter="com.example.francesco.masterplayer.fragment.ArtistFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/NestscrollView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/colorAccent"
+        android:scrollbars="vertical"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerArtist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:background="@color/white"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/no_artist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_artist"
+        android:gravity="center"
+        android:textSize="18sp"
+
+        android:visibility="invisible"/>
+
+</FrameLayout>

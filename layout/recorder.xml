@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:id="@+id/icon_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/chronometer0"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_rec"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="40dp"
+            app:cardBackgroundColor="@color/greyDark">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageRec"
+                android:layout_gravity="center"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/ic_recording"/>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chronometer0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Chronometer
+            android:id="@+id/chronometer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="55sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/chronometer0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/button2"
+            android:src="@drawable/ic_play_circle_outline_black_rec"
+            android:layout_alignBottom="@+id/radius_rec"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/desc"
+            android:layout_marginStart="40dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/radius_rec"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="28dp"
+            app:cardBackgroundColor="@color/red">
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/rec"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/radius_save"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/radius_rec"
+            app:cardCornerRadius="22dp"
+            android:layout_marginBottom="9dp"
+            app:cardBackgroundColor="@color/app_shortcut_default_foreground">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_save_rec"
+                android:contentDescription="@string/desc"
+                android:id="@+id/save_rec" />
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="ClickMe"/>
+
+    <ImageView
+        android:id="@+id/note"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/checkBoxMusic"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/ic_music_note_black" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/searchd"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/search_enter"/>
+    <item
+        android:id="@+id/ripRand"
+        android:title="@string/random2"/>
+    <item
+        android:id="@+id/order"
+        android:title="@string/sort">
+        <menu>
+            <group
+                android:checkableBehavior="single"
+                android:visible="true">
+                <item
+                    android:id="@+id/order_album"
+                    android:title="@string/album" />
+                <item
+                    android:id="@+id/order_title"
+                    android:title="@string/titolo" />
+                <item
+                    android:id="@+id/order_artist"
+                    android:title="@string/artista" />
+                <item
+                    android:id="@+id/order_duration"
+                    android:title="@string/dur" />
+                <item
+                    android:id="@+id/order_year"
+                    android:title="@string/year" />
+                <item
+                    android:id="@+id/order_track"
+                    android:title="@string/track"
+                    android:checked="true" />
+            </group>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/newPlaylist"
+        android:title="@string/new_playlist"/>
+    <item
+        android:id="@+id/action_toggle"
+        android:orderInCategory="100"
+        sothree:showAsAction="never"
+        android:title="@string/action_hide"/>
+</menu>

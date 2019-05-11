@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--item
+    android:id="@+id/svuota"
+    android:title="Svuota Playlist"
+    app:showAsAction="ifRoom|withText"/-->
+
+    <item
+        android:id="@+id/renamePL"
+        android:title="@string/rename"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/deletePlaylist"
+        android:title="@string/delete"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

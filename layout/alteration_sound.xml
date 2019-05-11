@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:gravity="center"
+    android:background="@color/greyMedium">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_vol"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        app:contentPadding="15dp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:text="@string/vol"/>
+
+            <TextView
+                android:id="@+id/perc_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/text_volume"
+                android:textColor="@color/black" />
+
+            <SeekBar
+                android:id="@+id/seekBar_volume"
+                android:layout_below="@+id/text_volume"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="-7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/clear_volume"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/ic_volume_up_black"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_pitch"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/card_vol"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        app:contentPadding="15dp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_pitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:text="@string/pitch"/>
+
+            <TextView
+                android:id="@+id/val_pitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/text_pitch"
+                android:textColor="@color/black" />
+
+            <SeekBar
+                android:id="@+id/seekBar_pitch"
+                android:layout_below="@+id/text_pitch"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="-7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/clear_pitch"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/ic_refresh_black"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_speed"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        app:contentPadding="15dp"
+        android:layout_below="@+id/card_pitch"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:text="@string/time"/>
+
+            <TextView
+                android:id="@+id/perc_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/text_speed"
+                android:textColor="@color/black" />
+
+            <SeekBar
+                android:id="@+id/seekBar_speed"
+                android:layout_below="@+id/text_speed"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="-7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/clear_speed"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/ic_refresh_black"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_loop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        app:contentPadding="15dp"
+        android:layout_below="@+id/card_speed"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/card_loop_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_loop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/loop"/>
+
+            <RelativeLayout
+                android:id="@+id/cardAB"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="120dp"
+                android:layout_height="100dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnA"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="@color/greyLight">
+
+                    <TextView
+                        android:id="@+id/text_btnA"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="@string/a"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnB"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardBackgroundColor="@color/greyLight">
+
+                    <TextView
+                        android:id="@+id/text_btnB"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="@string/b"/>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/clear_loop"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/ic_clear_black"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

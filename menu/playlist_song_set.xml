@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sharePL"
+        android:title="@string/share"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/dettagliPL"
+        android:title="@string/detail"
+        app:showAsAction="ifRoom|withText"/>
+
+
+    <item
+        android:id="@+id/setRingtonPL"
+        android:title="@string/setRington"
+        app:showAsAction="ifRoom|withText"/>
+
+    <!--<item
+        android:id="@+id/deleteSongInPL"
+        android:title="Elimina da Playlist"
+        app:showAsAction="ifRoom|withText"/>-->
+
+    <item
+        android:id="@+id/deleteSongPL"
+        android:title="@string/deleteDevice"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

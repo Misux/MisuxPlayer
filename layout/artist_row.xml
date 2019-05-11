@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/containerSong"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="6dp"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/artistacover"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/phonograph" />
+
+    <TextView
+        android:id="@+id/name_artist"
+        android:text="@string/name_artist"
+        android:textSize="15.5sp"
+        android:textColor="@color/black"
+        android:paddingEnd="50dp"
+        android:paddingStart="0dp"
+        android:layout_toEndOf="@id/artistacover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/num_Album"
+        android:text="@string/name_album"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/artistacover"
+        android:layout_below="@id/name_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/num_Brani"
+        android:text="@string/numBrani"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/num_Album"
+        android:layout_below="@id/name_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"/>
+
+</RelativeLayout>

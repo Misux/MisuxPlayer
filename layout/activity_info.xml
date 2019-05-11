@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:background="@color/greyMedium"
+    android:visibility="visible">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_info"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:textColor="@color/black">
+
+                <ImageView
+                    android:id="@+id/image_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="32dp"
+                    android:contentDescription="@string/desc"
+                    android:src="@mipmap/icon9" />
+
+                <TextView
+                    android:id="@+id/text_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="33.5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+
+                <TextView
+                    android:id="@+id/versione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp"
+                    android:layout_marginTop="85dp"
+                    android:text="@string/versione"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/info_versione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="117dp"
+                    android:layout_marginTop="103dp"
+                    android:text="@string/beta"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imageVersione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="88dp"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/ic_info2" />
+
+                <TextView
+                    android:id="@+id/aggiornamenti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp"
+                    android:layout_marginTop="140dp"
+                    android:textColor="@color/black"
+                    android:text="@string/update"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/info_aggiornamenti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="117dp"
+                    android:layout_marginTop="158dp"
+                    android:text="@string/num_update"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imageAgg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="143dp"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/ic_update" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/card_info"
+            android:id="@+id/card_autor"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/imageAutore"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="32dp"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/autor" />
+
+                <TextView
+                    android:id="@+id/info_autore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="27dp"
+                    android:textColor="@color/black"
+                    android:text="@string/name"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/info_autore3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/info_studente"
+                    android:textSize="13sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/linear_icons"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/info_autore3"
+                            android:layout_centerInParent="true">
+
+                                <ImageView
+                                    android:id="@+id/iconLinke"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_toStartOf="@+id/iconMail"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginEnd="60dp"
+                                    android:contentDescription="@string/desc"
+                                    android:src="@drawable/linkedinbox2" />
+
+                                <ImageView
+                                    android:id="@+id/iconMail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:contentDescription="@string/desc"
+                                    android:onClick="emailClick"
+                                    android:paddingTop="5dp"
+                                    android:src="@drawable/ic_mail" />
+
+                                <ImageView
+                                    android:id="@+id/iconGithub"
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_toEndOf="@+id/iconMail"
+                                    android:layout_centerInParent="true"
+                                    android:contentDescription="@string/desc"
+                                    android:src="@drawable/github2" />
+                        </RelativeLayout>
+
+                </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/card_autor"
+            android:id="@+id/card_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="30dp"
+                            android:contentDescription="@string/desc"
+                            android:src="@drawable/web2" />
+
+                        <TextView
+                            android:id="@+id/info_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="22dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="23dp"
+                            android:textColor="@color/black"
+                            android:text="@string/icon"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/info_icon2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="22dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="46dp"
+                            android:text="@string/iconBox"
+                            android:textSize="13sp" />
+
+                </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>

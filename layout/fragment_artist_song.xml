@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context_songAdpter="com.example.francesco.masterplayer.fragment.ArtistSongFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_scroll_artist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/NestscrollView_artist_song"
+            style="@style/NestedScrollBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            android:scrollbarSize="0dp"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/artist_cover_song"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:background="@drawable/phonograph"
+                    android:fitsSystemWindows="true"
+                    android:contentDescription="@string/desc"
+                    android:scaleType="centerCrop" />
+
+                <FrameLayout
+                    android:id="@+id/tolbar_name_artist"
+                    android:layout_below="@+id/artist_cover_song"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ic_arrow"
+                            android:layout_width="24dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/desc"
+                            android:src="@drawable/ic_arrow" />
+
+                        <TextView
+                            android:id="@+id/name_artist"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/ic_arrow"
+                            android:paddingEnd="50dp"
+                            android:paddingStart="0dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="12.5dp"
+                            android:layout_marginStart="28dp"
+                            android:maxLines="1"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/name_artist"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:id="@+id/totDuration"
+                            android:layout_width="44dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginTop="16.5dp"
+                            android:text="@string/duration"
+                            android:maxLines="1"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:id="@+id/ic_time"
+                            android:layout_width="24dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="12dp"
+                            android:contentDescription="@string/desc"
+                            android:src="@drawable/ic_timer" />
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerSongsArtist"
+                    android:layout_below="@+id/tolbar_name_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:background="@color/white"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="-10dp"/>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_song"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+</FrameLayout>

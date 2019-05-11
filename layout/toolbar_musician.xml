@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/iv_equalizer"
+        android:layout_width="25dp"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/iv_according"
+        android:layout_gravity="top"
+        android:layout_marginEnd="100dp"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/ic_equalizer" />
+
+    <ImageView
+        android:id="@+id/iv_according"
+        android:layout_width="25dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/ic_recording" />
+
+    <ImageView
+        android:id="@+id/iv_alteration"
+        android:layout_width="25dp"
+        android:layout_height="36dp"
+        android:layout_alignStart="@+id/iv_according"
+        android:layout_marginStart="100dp"
+        android:layout_gravity="top"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/ic_tune_white" />
+
+</RelativeLayout>
