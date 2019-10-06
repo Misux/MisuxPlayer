@@ -114,7 +114,7 @@ public class MusicLibrary {
         context.getContentResolver().delete(rootUri, MediaStore.MediaColumns.DATA + "=?", new String[]{path});
     }
 
-    /* ----------------------------------------------- ALBUM --------------------------------------------------*/
+    /* ----------------------------------------------- ALBUM --------------------------------------------------_*/
 
     public static void getAlbumsLists(){
         Log.v("getAlbumsList = ", TAG);
